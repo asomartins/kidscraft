@@ -1,0 +1,98 @@
+.header-bg {
+  background-color: #f8cd4f;
+}
+
+.header {
+  /* layout escolhido: marca de um lado, menu de outro */
+  display: flex;
+  /* quebra o menu para baixo quando o container diminui */
+  flex-wrap: wrap;
+  /* distância entre a logo e o menu quando o container diminui */
+  gap: 10px;
+  /* cada item em uma ponta, espaço no meio */
+  justify-content: space-around;
+  /* marca alinhada com itens ao centro*/
+  align-items: center;
+  /* não soma o valor de padding no max-width*/
+  box-sizing: border-box;
+  padding: 10px;
+  /* container responsivo */
+  max-width: 1200px;
+  /* alinha ao centro quando cresce mais que o valor máximo do container */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header img,
+.container img {
+  width: 137px;
+  height: 124px;
+}
+
+.header-menu {
+  /* itens li alinhados um ao lado da outro */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header-menu a {
+  /* ajusta os elementos inline para que o padding da área de contato funcione corretamente */
+  display: inline-block;
+  color: #593574;
+  /* aumenta a área de contato do link */
+  padding: 16px 0;
+  font-size: 30px;
+  /* ajuste para que ele se torne o elemento pai do after p/ o efeito de sublinhado */
+  position: relative;
+  font-family: 'Righteous', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* criação de um pseudo-elemento c/ a largura do elemento pai (a) para criar o efeito de sublinhado no menu */
+.header-menu a:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0px;
+  background: #e9679b;
+  margin-top: 4px;
+  transition: 0.3s;
+  /* remove o after do fluxo para alinhar melhor o elemento ao centro da logo e ao header */
+  position: absolute;
+}
+
+.header-menu a:hover:after {
+  width: 100%;
+}
+
+/* ajuste de problemas de espaçamento que ocorrem com as quebras (mobile) */
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 20px;
+  }
+  .header-menu a {
+    background: #e9679b;
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+
+  .header-menu a:hover {
+    background: #eeb5eb;
+  }
+
+  .header a:after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
+
+  .header-menu a {
+    padding: 8px 12px;
+  }
+}
