@@ -1,9 +1,13 @@
+.footer-bg {
+  background-color: #f8cd4f; 
+}
+
 .footer {
   display: grid;
   grid-template-columns: 3fr 5fr 4fr;
   gap: 40px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   max-width: 1200px !important;
 }
 
