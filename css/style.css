@@ -1,6 +1,5 @@
 @import 'global/header.css';
 @import 'global/global.css';
-@import 'util/componentes.css';
 @import 'global/footer.css';
 
 img {
@@ -9,13 +8,15 @@ img {
   border-radius: 4px;
 }
 
-.home-bg, .formulario-bg {
+.home-bg,
+.formulario-bg {
   background: #fdf0c8;
   color: #593574;
   padding-top: 30px;
 }
 
-.home, .formulario {
+.home,
+.formulario {
   display: grid;
   /* fr ditribui o espaço que sobra */
   grid-template-columns: 6fr 6fr;
@@ -32,12 +33,13 @@ img {
 }
 
 /*alinhando o texto ao lado da imagem da home para baixo*/
-.home-conteudo, .formulario-conteudo {
+.home-conteudo {
   align-self: end;
   padding-bottom: 80px;
 }
 
-.home h1, .formulario h1{
+.home h1,
+.formulario h1 {
   margin-bottom: 32px;
   font-size: 64px;
   line-height: 1.125;
@@ -47,14 +49,16 @@ img {
   font-style: normal;
 }
 
-.home p {
+.home p,
+.formulario p {
   margin-bottom: 20px;
   font-size: 24px;
   line-height: 1.5;
   color: #9077ad;
 }
 
-.home a, .formulario a, .formulario .b-rosa {
+.home a,
+.formulario .b-rosa {
   display: inline-block;
   padding: 16px 32px;
   background: #f392ba;
@@ -67,28 +71,14 @@ img {
   border-style: none;
 }
 
-.home a:hover, .formulario .b-rosa:hover {
+.home a:hover,
+.formulario .b-rosa:hover {
   background: linear-gradient(#fd81b9, #df6499);
 }
 
-#contato {
-  background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
-}
-
-.contato {
-  display: grid;
-  grid-template-columns: 5fr 7fr;
-}
-
-.contato-dados,
 .contato-formulario {
   padding: 60px;
   /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
-}
-
-.contato-dados {
-  border-radius: 5px 0 0 5px;
-  background: var(--cor-12);
 }
 
 .contato-formulario {
@@ -97,9 +87,12 @@ img {
   padding: 20px;
   border: 2px solid #f392ba;
 }
+.formulario {
+  padding-bottom: 30px;
+}
 
 @media (max-width: 800px) {
-  .contato {
+  .formulario {
     grid-template-columns: 1fr;
   }
 }

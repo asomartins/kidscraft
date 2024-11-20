@@ -1,5 +1,6 @@
 .header-bg {
-  background-color: #f8cd4f; 
+  background-color: #f8cd4f;
+  /* background-color: rgba(248, 205, 79, 0.8); */
 }
 
 .header {
@@ -23,10 +24,9 @@
   margin-right: auto;
 }
 
-.header img,
-.container img {
-  width: 137px;
-  height: 124px;
+.header img {
+  width: 117px;
+  height: 104px;
 }
 
 .header-menu {
@@ -45,9 +45,6 @@
   font-size: 30px;
   /* ajuste para que ele se torne o elemento pai do after p/ o efeito de sublinhado */
   position: relative;
-  font-family: 'Righteous', serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 /* criação de um pseudo-elemento c/ a largura do elemento pai (a) para criar o efeito de sublinhado no menu */
