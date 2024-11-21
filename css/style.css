@@ -2,7 +2,13 @@
 @import 'global/global.css';
 @import 'global/footer.css';
 
-img {
+.footer .container img {
+  width: 117px;
+  height: 104px;
+}
+
+.home img,
+.formulario-conteudo img {
   max-width: 100%;
   display: block;
   border-radius: 4px;
@@ -10,7 +16,9 @@ img {
 
 .home-bg,
 .formulario-bg {
-  background: #fdf0c8;
+  /* background: #fdf0c8; */
+  background-color: rgba(253, 240, 200, 0.8);
+  /* background: url(/img/bgs/bg-body.png) ; */
   color: #593574;
   padding-top: 30px;
 }

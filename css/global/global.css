@@ -2,10 +2,10 @@ body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100%;
-  /* background-image: url('/img/crafts-for-kids.jpg');
+  background-image: url('/img/bgs/bg-body.webp');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; */
+  background-position: center center;
 }
 
 h1,
@@ -19,6 +19,12 @@ p {
 a {
   text-decoration: none !important;
   color: inherit;
+}
+
+.header-bg,
+.footer-bg {
+  background-color: #f8cd4f;
+  /* background-color: rgba(248, 205, 79, 0.9); */
 }
 
 .font-1 {
