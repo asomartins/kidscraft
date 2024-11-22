@@ -1,6 +1,5 @@
 .header-bg {
-  /* background-color: #f8cd4f; */
-  /* background-color: rgba(248, 205, 79, 0.8); */
+  /* background-color: rgba(248, 205, 79, 0.9); */
   background-color: #f8cd4f;
 }
 
@@ -43,7 +42,7 @@
   color: #593574;
   /* aumenta a área de contato do link */
   padding: 16px 0;
-  font-size: 30px;
+  font-size: 26px;
   /* ajuste para que ele se torne o elemento pai do after p/ o efeito de sublinhado */
   position: relative;
 }

@@ -2,10 +2,11 @@ body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100%;
-  background-image: url('/img/bgs/bg-body.webp');
+  /* background-image: url('/img/bgs/bg-body.webp'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  padding-bottom: 600px;
 }
 
 h1,
@@ -31,5 +32,21 @@ a {
   font-family: 'Righteous', serif;
   font-weight: 400;
   font-style: normal;
-  color: #593574;
+}
+
+.color-1,
+a {
+  color: #593574 !important;
+}
+
+p,
+.color-2 {
+  color: #5b3384 !important;
+}
+
+.font-2 {
+  font-family: 'Comfortaa', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
