@@ -73,6 +73,7 @@
     background: #e9679b;
     padding: 8px 14px;
     border-radius: 4px;
+    font-size: 20px;
   }
 
   .header-menu a:hover {
@@ -90,6 +91,7 @@
   }
 
   .header-menu a {
+    font-size: 18px;
     padding: 6px 10px;
   }
 }
