@@ -9,9 +9,14 @@ body {
 }
 
 h1,
-ul,
+h2,
+h3,
+h4,
 p {
   margin: 0px;
+}
+
+ul {
   padding: 0px;
   list-style: none;
 }
@@ -50,6 +55,12 @@ p,
   font-style: normal;
 }
 
-span {
+.col-blue {
   color: #6ee0e0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

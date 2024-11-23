@@ -1,6 +1,7 @@
 @import 'header.css';
 @import 'global.css';
 @import 'footer.css';
+@import 'artesanatos.css';
 
 .home img,
 .formulario-conteudo img {
@@ -11,9 +12,8 @@
 
 .home-bg,
 .formulario-bg {
-  /* background: #fdf0c8; */
-  background-color: rgba(253, 240, 200, 0.8);
-  /* background: url(/img/bgs/bg-body.png) ; */
+  background: #fdf0c8;
+  /* background-color: rgba(253, 240, 200, 0.5); */
   padding-top: 30px;
 }
 
