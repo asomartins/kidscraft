@@ -1,11 +1,8 @@
 body {
   margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   min-height: 100%;
-  /* background-image: url('/img/bgs/bg-body.webp'); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 h1,
@@ -26,12 +23,6 @@ a {
   color: inherit;
 }
 
-.header-bg,
-.footer-bg {
-  background-color: #f8cd4f;
-  /* background-color: rgba(248, 205, 79, 0.9); */
-}
-
 .font-1 {
   font-family: 'Righteous', serif;
   font-weight: 400;
@@ -39,13 +30,9 @@ a {
 }
 
 .color-1,
-a {
+a,
+p {
   color: #593574 !important;
-}
-
-p,
-.color-2 {
-  color: #5b3384 !important;
 }
 
 .font-2 {
@@ -62,5 +49,6 @@ p,
 img {
   max-width: 100%;
   height: auto;
-  display: block;
+  display: block !important;
+  border-radius: 4px;
 }

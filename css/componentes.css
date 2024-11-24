@@ -1,0 +1,70 @@
+/* Container de conteúdo presente em todas as páginas */
+
+.container {
+  /* não soma o valor de padding no max-width */
+  box-sizing: border-box;
+  /*container responsivo*/
+  max-width: 1200px !important;
+  padding: 20px;
+  /* alinha ao centro quando cresce mais que o valor máximo do container, 
+  assim teremos itens sempre alinhados ao centro independente do tamanho da página */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container h1 {
+  margin-bottom: 32px;
+  font-size: 40px;
+  line-height: 1.125;
+}
+
+/* Botão */
+
+.b-rosa {
+  display: inline-block;
+  padding: 16px 32px;
+  background: #f392ba;
+  color: #ffffff !important;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: bold;
+  border-style: none;
+}
+
+.b-rosa:hover {
+  background: linear-gradient(#fd81b9, #df6499);
+}
+
+/* títulos internos */
+.titulo p {
+  margin-bottom: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .home h1,
+  .formulario h1 {
+    font-size: 30px;
+  }
+
+  .home .b-rosa,
+  .formulario .b-rosa {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-top: 12px !important;
+    padding-bottom: 12px;
+  }
+
+  .titulo p {
+    font-size: 16px;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}

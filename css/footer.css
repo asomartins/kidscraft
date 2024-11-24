@@ -1,20 +1,18 @@
+.footer-bg {
+  background-color: #f8cd4f;
+}
+
 .footer {
   display: grid;
   grid-template-columns: 3fr 3fr 3fr;
   gap: 40px;
   padding-top: 30px;
   padding-bottom: 10px;
-  max-width: 1200px !important;
 }
 
-.footer-bg .footer-redes a img {
+.footer img {
   width: auto;
   height: auto;
-}
-
-.footer-bg .container img {
-  width: 117px;
-  height: 104px;
 }
 
 .footer h3 {

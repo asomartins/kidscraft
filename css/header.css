@@ -14,14 +14,8 @@
   justify-content: space-around;
   /* marca alinhada com itens ao centro*/
   align-items: center;
-  /* não soma o valor de padding no max-width*/
-  box-sizing: border-box;
-  padding: 10px;
-  /* container responsivo */
-  max-width: 1200px;
-  /* alinha ao centro quando cresce mais que o valor máximo do container */
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header img {
