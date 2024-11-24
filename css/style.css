@@ -48,6 +48,49 @@
   padding: 0;
 }
 
+.formulario-conteudo ul li,
+.redes ul li {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.formulario-conteudo .localizacao {
+  margin-bottom: 32px;
+  padding-left: 35px;
+  background: url('../img/icon-location.png') no-repeat;
+}
+
+.redes ul,
+.lista-contato {
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.redes ul {
+  margin-bottom: 50px;
+}
+
+.estudio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.aulas li {
+  list-style-type: disc;
+}
+.estudio li {
+  flex: 2;
+  min-width: 200px;
+}
+
 @media (max-width: 800px) {
   .home,
   .formulario {

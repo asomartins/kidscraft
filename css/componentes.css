@@ -42,6 +42,11 @@
   margin-bottom: 10px;
 }
 
+.titulo-bg .container {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
 /* Responsividade */
 @media (max-width: 1200px) {
   .home h1,
