@@ -1,77 +1,126 @@
-.artesanatos-lista {
-  padding-bottom: 50px;
-  background: rgba(253, 240, 200, 0.3);
-}
-
-.artesanatos-lista h2 {
-  margin-bottom: 40px;
-}
-
-.artesanatos-lista ul {
-  display: flex;
-  gap: 150px;
-  row-gap: 40px;
-  padding: 0 20px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  flex-wrap: wrap;
-}
-
-.artesanatos-lista li {
-  flex: 2;
-  min-width: 184px;
-}
-
-.artesanatos-lista a {
-  display: block;
-}
-
-.artesanatos-lista img:hover {
-  opacity: 0.8;
-}
-
-.artesanatos-lista img {
-  margin-bottom: 16px;
-}
-
-.artesanatos-lista h3 {
-  margin-bottom: 8px;
-  font-size: 18px;
-  font-weight: bold;
+.loja {
   display: flex;
   align-items: center;
+  gap: 20px;
+  margin-bottom: 22px !important;
 }
 
-.artesanatos-lista h3::before {
-  content: '';
+.bag {
+  margin-bottom: 10px;
+}
+
+.artesanatos-bg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  row-gap: 50px;
+}
+
+.artesanatos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 20px;
+  row-gap: 20px;
+}
+
+.artesanatos-imagem {
+  position: relative;
+  width: 30%;
+}
+
+.artesanatos-imagem span {
+  background-color: #fd81b9;
   display: inline-block;
-  height: 8px;
-  width: 12px;
-  margin-right: 8px;
-  background-color: #6ee0e0;
-  transition: width 0.2s;
+  padding: 6px 16px 6px 8px;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 4px 0 0 4px;
+  position: absolute;
+  top: 8px;
+  right: 0;
 }
 
-.artesanatos-lista a:hover h3::before {
+.artesanatos-conteudo ul {
+  display: grid;
+  gap: 16px;
+  padding-top: 10px;
+  padding-left: 0;
+}
+
+.artesanatos-conteudo ul li {
+  display: flex;
+  align-items: start;
+}
+
+.artesanatos-conteudo img {
   width: 24px;
+  margin-right: 12px;
 }
 
-.artesanatos-lista li span {
-  padding-left: 20px;
+.artesanatos-conteudo {
+  display: block;
+  position: relative;
+  width: 60%;
+}
+
+.artesanatos-conteudo .seta {
+  padding: 10px 22px;
+  text-transform: lowercase;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .artesanatos-bg {
+    grid-template-columns: 1fr;
+  }
+
+  .artesanatos {
+    row-gap: 30px;
+  }
+
+  .artesanatos-conteudo h2 {
+    font-size: 2rem;
+  }
+  .artesanatos-conteudo ul {
+    font-size: 24px;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 800px) {
-  .artesanatos-lista ul {
-    gap: 100px;
+  .artesanatos-conteudo h2 {
+    font-size: 1.8rem;
   }
-  .artesanatos-lista h3 {
-    font-size: 18px;
+  .artesanatos-conteudo ul {
+    font-size: 16px;
+    gap: 5px;
   }
 }
 
 @media (max-width: 600px) {
-  .artesanatos-lista ul {
-    gap: 20px;
+  .artesanatos-conteudo h2 {
+    font-size: 1rem;
+  }
+  .artesanatos-conteudo ul {
+    font-size: 12px;
+  }
+  .artesanatos-imagem span {
+    padding: 4px 12px 4px 4px;
+    font-size: 16px;
+  }
+  .artesanatos-conteudo .seta {
+    background: none;
+    color: #df6499 !important;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .artesanatos-conteudo .seta:hover {
+    background: none;
+    text-decoration: underline !important;
   }
 }

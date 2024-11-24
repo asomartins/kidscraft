@@ -39,7 +39,7 @@
 
 /* títulos internos */
 .titulo p {
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 
 /* Responsividade */
@@ -60,11 +60,5 @@
   .titulo-bg {
     padding-top: 12px !important;
     padding-bottom: 12px;
-  }
-
-  .titulo p {
-    font-size: 16px;
-    text-transform: lowercase;
-    font-weight: 400;
   }
 }

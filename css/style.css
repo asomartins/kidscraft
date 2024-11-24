@@ -1,20 +1,15 @@
 @import 'header.css';
 @import 'global.css';
 @import 'footer.css';
+@import 'artesanatos-lista.css';
 @import 'artesanatos.css';
 @import 'componentes.css';
 
 .home-bg,
-.formulario-bg,
 .titulo-bg {
   /*background: #fdf0c8; */
   background: rgba(253, 240, 200, 0.8);
   padding-top: 20px;
-}
-
-.sobre {
-  background: rgba(253, 240, 200, 0.3);
-  padding: 0 20px;
 }
 
 .home,
@@ -38,18 +33,19 @@
   line-height: 1.5;
 }
 
-.contato-formulario {
-  padding: 60px;
-}
-
-.contato-formulario {
+.envio-formulario {
   border-radius: 6px;
   background: #ffffff;
   padding: 20px;
   border: 2px solid #f392ba;
+  height: min-content;
 }
 .formulario {
   padding-bottom: 30px;
+}
+
+.formulario-conteudo ul {
+  padding: 0;
 }
 
 @media (max-width: 800px) {

@@ -1,0 +1,76 @@
+.artesanatos-lista {
+  padding-bottom: 50px;
+}
+
+.artesanatos-lista h2 {
+  margin-bottom: 40px;
+}
+
+.artesanatos-lista ul {
+  display: flex;
+  gap: 150px;
+  row-gap: 40px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.artesanatos-lista li {
+  flex: 2;
+  min-width: 184px;
+}
+
+.artesanatos-lista a {
+  display: block;
+}
+
+.artesanatos-lista img:hover {
+  opacity: 0.8;
+}
+
+.artesanatos-lista img {
+  margin-bottom: 16px;
+}
+
+.artesanatos-lista h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.artesanatos-lista h3::before {
+  content: '';
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: #6ee0e0;
+  transition: width 0.2s;
+}
+
+.artesanatos-lista a:hover h3::before {
+  width: 24px;
+}
+
+.artesanatos-lista li span {
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .artesanatos-lista ul {
+    gap: 100px;
+  }
+  .artesanatos-lista h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .artesanatos-lista ul {
+    gap: 20px;
+  }
+}
